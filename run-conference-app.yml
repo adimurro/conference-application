@@ -9,4 +9,4 @@
       shell: docker rm -f conferenceapp
       when: conference_id.stdout != ""
     - name: Start test container
-      shell: docker run -d --name conference-test -p 10100:8080 adimurro/conference-application
+      shell: docker run -d --name conferenceapp -p 10100:8080 adimurro/conference-application
